@@ -40,7 +40,7 @@
 </head>
 <body>
 <%
-    String answer = (String) request.getAttribute("answer");
+    String answer = (String) request.getAttribute("answer"); // 요청 시 Attribute를 받아온다.
     String prompt = (String) request.getAttribute("prompt"); %>
 <form>
     <section class="title">

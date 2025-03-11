@@ -17,6 +17,7 @@ public class AuthController extends HttpServlet {
         int luckyNumber;
         if (req.getCookies() == null ||
                 Arrays.stream(req.getCookies()).noneMatch(cookie -> cookie.getName().equals("cookie_number"))
+            // Cookies가 null or cookie_number 와 nonematch 일때 작동
         ) {
             luckyNumber = rand.nextInt(100);
             Cookie cookie = new Cookie("cookie_number", "%d".formatted(luckyNumber));
