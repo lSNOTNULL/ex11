@@ -8,5 +8,7 @@
   <a href="page02.jsp">page02</a>
   <a href="private">private</a>
   <a href="auth">auth</a>
+  <a href="image/7_guy">7_guy</a>
+  <a href="image/cookie">cookie</a>
 </body>
 </html>
